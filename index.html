@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Border-Radius</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div id="page">
+            <h1>border-radius generator</h1>
+            <p class="info">Informe os valores para cada um dos lados (Máximo: 150px)</p>
+            <input id="top-left" onkeyup="borderRadius('top', 'left')" type="number" placeholder="Superior Esquerdo" />
+            <input id="top-right" onkeyup="borderRadius('top', 'right')" type="number" placeholder="Superior Direito" />
+            
+            <div id="generator">
+                <p class="top-left"></p>
+                <p class="top-right"></p>
+                <p class="bottom-left"></p>
+                <p class="bottom-right"></p>
+            </div>
+                
+            <input id="bottom-left" onkeyup="borderRadius('bottom', 'left')" type="number" placeholder="Inferior Esquerdo" />
+            <input id="bottom-right" onkeyup="borderRadius('bottom', 'right')" type="number" placeholder="Inferior Direito" />
+            
+            <div>
+                <p class="author">By: <a href="https://github.com/natansantoss" target="_blank">Natan.Santos</a></p>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

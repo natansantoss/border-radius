@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap')
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: URL("assets/background-image.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#page{
+    background-color: rgba(0, 0, 0, 0.7);
+   
+    width: 100%;
+    max-width: 1120px;
+    height: 600px;
+
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding-top: 3px;
+
+    animation-name: fade;
+    animation-duration: 0.6s;
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 12px;
+
+    animation-name: fade;
+    animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+    animation-delay: 250ms;
+}
+.info, .author{
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 5px 0px 35px 0px;
+    
+    animation-name: fade;
+    animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+    animation-delay: 350ms;
+}
+
+#generator{
+    background-color: rgb(255, 255, 255, 0.35);
+    width: 500px;
+    height: 300px;
+    box-sizing: border-box;
+
+    display: block;
+    margin: auto;   
+    margin-bottom: 15px;
+    margin-top: 15px;    
+    padding-top: 95px;
+
+    animation-name: fade;
+    animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+    animation-delay: 450ms;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right{
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: auto;
+}
+
+#top-left, #bottom-left{
+    margin-left: 150px;
+
+    animation-name: fade;
+    animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+    animation-delay: 550ms;
+}
+#top-right, #bottom-right{
+    margin-left: 300px;
+
+    animation-name: fade;
+    animation-duration: 0.6s;
+    animation-fill-mode: backwards;
+    animation-delay: 550ms;
+}
+
+input{
+    width: 250px;
+    height: 20px;
+
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color:#000;
+
+    border: 1px solid #fff;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+input:focus {
+    outline: 0;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+.author, a{
+    margin-top: 40px;
+
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: scale(0.9);
+    }to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
